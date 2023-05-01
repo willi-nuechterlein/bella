@@ -1,0 +1,53 @@
+{
+  "private": true,
+  "name": "bella",
+  "description": "Bella Personal AI",
+  "version": "1.0.0",
+  "author": "",
+  "main": "app/background.js",
+  "scripts": {
+    "dev": "nextron",
+    "build": "nextron build",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^2.5.5",
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@shopify/polaris-viz": "^9.2.1",
+    "date-fns": "^2.29.3",
+    "electron-serve": "^1.1.0",
+    "electron-store": "^8.1.0",
+    "eslint": "^8.38.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-next": "^13.3.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "framer-motion": "^10.12.4",
+    "langchain": "^0.0.60",
+    "numeral": "^2.0.6",
+    "react-icons": "^4.8.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "@types/react": "^18.0.26",
+    "electron": "^21.3.3",
+    "electron-builder": "^23.6.0",
+    "next": "^12.3.4",
+    "nextron": "^8.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^4.9.4"
+  },
+  "build": {
+    "mac": {
+      "icon": "resources/logo512.png"
+    },
+    "buildDependenciesFromSource": true
+  }
+}
